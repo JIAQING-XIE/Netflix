@@ -12,3 +12,4 @@ Version 0.1.1 adds the footer.
 
 ## Former Version
 version 0.1.0 ensures the basic background and contents
+![Bgd and icon](https://github.com/JIAQING-XIE/Netflix/blob/main/imgs/netflix_clone1.png)
