@@ -263,10 +263,17 @@ h3 {
     color: #222222;
     background: rgb(0, 0, 0);
     padding: 45px 70px;
+    display: flex;
+    
+    justify-items: center;
+    color: rgb(136, 132, 132);
+    position: relative;
 }
 
 .footer ul{
     list-style-type: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .footer ul li:hover{
