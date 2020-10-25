@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    font-family: 'Open Sans', san-serif;
+    font-size: 16px ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+.banner-warp {
+    background: url(./assets/bgimage.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position:relative;
+    z-index: 1;
+}
+
+.banner-warp::after{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    content: '';
+    z-index: -1;
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between ;
+    padding-top: 20px;
+    margin: 0 56px;
+    height: 64px;
+}
+
+.nav-bar .logo img {
+    height: 40px;
+}
+
+.nav-bar .btn {
+    color: white;
+    background-color: red;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+.banner-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 45px;
+    height: calc(100% - 55px)
+}
+
+h1{
+    font-size:  3.125rem;
+    font-weight: 600;
+    margin: 16px 75px;
+}
+
+h2{
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin:16px 75px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.get-started {
+    padding-top: 0.85rem ;
+}
+.get-started input{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    border: none;
+    width: 450px;
+}
+.get-started form{
+    height: 60px;
+    display: flex;
+}
+
+.get-started .btn{
+    background-color: red;
+    color: white;
+    width: 248px;
+    padding: 0 26px;
+    border: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    font-size: 1.625rem;
+}
+
+
+
+
+
+.info-container {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    position: relative; 
+    padding: 45px 70px;
+    border-top: solid #222222 10px;
+    border-bottom: solid #222222 10px;
+}
+
+.tv-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center;   */
+}
+
+.tv {
+    position: relative;
+    z-index: 1;
+} 
+
+.video {
+    position: absolute;
+    top: 20%;
+}
+
+
+
+
+.our-story-card {
+ 
+    position: relative;
+    border-bottom: 8px solid rgb(34, 34, 34);
+    padding: 50px 5%;
+    margin-bottom: 0px;
+    background: 0px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.animation-card .animation-card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-flow: row-reverse;
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.animation-card .our-story-card-text {
+    width: 52%;
+    height: 100%;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    z-index: 3;
+}
+
+.animation-card .our-story-card-img-container {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+}
+
+.animation-card .our-story-card-animation-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0px auto;
+    background: rgb(0, 0, 0);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 60%;
+    min-width: 15em;
+    padding: 0.25em 0.65em;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: rgb(0, 0, 0) 0px 0px 2em 0px;
+    border-radius: 0.75em;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-image {
+    margin: 0px 1em 0px 0px;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-text {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0.3em 0px;
+}
+
+.our-story-card-title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.our-story-card-subtitle, .our-story-card-text {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-image img {
+    height: 4.5em;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-text .text-0 {
+    font-size: 1em;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-text .text-1, .animation-card.downloadAndWatch .our-story-card-animation .our-story-card-animation-text .text-2 {
+    font-size: 0.9em;
+    color: rgb(0, 113, 235);
+    font-weight: 400;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation::after {
+    height: 3.75em;
+    width: 3em;
+    outline: rgb(0, 0, 0) solid 2px;
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center / 100% no-repeat;
+    content: "";
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+
+.footer {
+    border-top: solid #222222 10px;
+    color: #222222;
+    background: rgb(0, 0, 0);
+    padding: 45px 70px;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.footer ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
